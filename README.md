@@ -17,7 +17,9 @@ Siguiendo este segundo enfoque para aproximar la optimización del gradiente nat
 
 Consideramos redes neuronales artificiales estándar donde el cálculo de cada neurona consiste en tomar una suma ponderada de características de entrada, seguida de una no linealidad elemental:
 
+```markdown
 $$ y = \phi(w.x + b) $$
+```
 
 donde $w$ es un vector de peso k-dimensional, $b$ es un término de polarización escalar, $x$ es un vector k-dimensional de características de entrada, $\phi(.)$ denota una no linealidad elemental tal como el rectificador $max(., 0)$, y $y$ denota la salida escalar de la neurona.
 
@@ -25,7 +27,9 @@ Después de asociar una función de pérdida a una o más salidas neuronales, di
 
 Con la intención de acelerar la convergencia de este procedimiento de optimización, la reparameterización de cada vector de peso $w$ en términos de un vector de parámetro $v$ y un parámetro escalar $g$ y realizar un descenso de gradiente estocástico con respecto a esos parámetros. La expresión del vector quedaría expresado de la siguiente forma:
 
+```markdown
 $$ w = \frac{g}{||v||}v $$
+```
 
 donde $v$ es un vector k-dimensional, $g$ es un escalar, y $||v||$ denota la norma euclidiana de $v$. Esta reparameterización tiene el efecto de fijar la norma euclidiana del vector de peso $w$: ahora tenemos $||w|| = g$, independiente de los parámetros $v$.
 

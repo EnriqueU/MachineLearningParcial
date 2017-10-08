@@ -27,8 +27,8 @@ Después de asociar una función de pérdida a una o más salidas neuronales, di
 
 Con la intención de acelerar la convergencia de este procedimiento de optimización, la reparameterización de cada vector de peso $w$ en términos de un vector de parámetro $v$ y un parámetro escalar $g$ y realizar un descenso de gradiente estocástico con respecto a esos parámetros. La expresión del vector quedaría expresado de la siguiente forma:
 
-```latex
-$w = \frac{g}{||v||}v $
+```Latex
+$$w = \frac{g}{||v||}v$$
 ```
 
 donde $v$ es un vector k-dimensional, $g$ es un escalar, y $||v||$ denota la norma euclidiana de $v$. Esta reparameterización tiene el efecto de fijar la norma euclidiana del vector de peso $w$: ahora tenemos $||w|| = g$, independiente de los parámetros $v$.

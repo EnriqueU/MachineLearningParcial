@@ -29,6 +29,7 @@ Con la intención de acelerar la convergencia de este procedimiento de optimizac
 
 ```Latex
 $$w = \frac{g}{||v||}v$$
+&oplus
 ```
 
 donde $v$ es un vector k-dimensional, $g$ es un escalar, y $||v||$ denota la norma euclidiana de $v$. Esta reparameterización tiene el efecto de fijar la norma euclidiana del vector de peso $w$: ahora tenemos $||w|| = g$, independiente de los parámetros $v$.
